@@ -11,16 +11,21 @@
 
 <body>
   <form action="example.com/path" method="post">
-    <select>
-      <optgroup label="nebuna">
-        <option value="BMW">BWM</option>
-      </optgroup>
-      <optgroup label="buna">
-        <option value="Audi">Audi</option>
-        <option value="Opel" selected>Opel</option>
-        <option value="Fiat">Fiat</option>
-      </optgroup>
-    </select>
+    <h1>Ticket Type</h1>
+<div>
+  <input type="radio" id="child" name="ticket_type" value="child" checked>
+  <label for="child">Child</label>
+</div>
+
+<div>
+  <input type="radio" id="adult" name="ticket_type" value="adult">
+  <label for="adult">Adult</label>
+</div>
+
+<div>
+  <input type="radio" id="senior" name="ticket_type" value="senior">
+  <label for="senior">Senior</label>
+</div>
   </form>
 </body>
 
