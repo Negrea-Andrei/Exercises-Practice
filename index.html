@@ -12,10 +12,14 @@
 <body>
   <form action="example.com/path" method="post">
     <select>
-      <option value="BMW">BWM</option>
-      <option value="Audi">Audi</option>
-      <option value="Opel" selected>Opel</option>
-      <option value="Fiat">Fiat</option>
+      <optgroup label="nebuna">
+        <option value="BMW">BWM</option>
+      </optgroup>
+      <optgroup label="buna">
+        <option value="Audi">Audi</option>
+        <option value="Opel" selected>Opel</option>
+        <option value="Fiat">Fiat</option>
+      </optgroup>
     </select>
   </form>
 </body>
