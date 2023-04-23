@@ -12,12 +12,13 @@
 <body>
   <form action="#" method="get">
     <div>
-      <label for="quantity">Quantity</label>
+      <label for="zip_code">Postal / Zip Code:</label>
     </div>
-    <input type="number" id="quantity" name="quantity" min="5" value="0">
-    
+  
+    <input type="text" id="zip_code" name="zip_code" pattern="(\s{5}([\-]\s{4})?)" required>
+  
     <div>
-      <button type="submit">Place Order</button>
+      <button type="submit">Submit</button>
     </div>
   </form>
 </body>
