@@ -12,10 +12,14 @@
 <body>
   <form action="#" method="get">
     <div>
-      <label for="zip_code">Postal / Zip Code:</label>
+      <label for="email">Email</label>
     </div>
+    <input type="text" id="email" name="email" minlength="2" maxlength="12">
   
-    <input type="text" id="zip_code" name="zip_code" pattern="(\s{5}([\-]\s{4})?)" required>
+    <div>
+      <label for="website">Website</label>
+    </div>
+    <input type="url" id="website" name="website">
   
     <div>
       <button type="submit">Submit</button>
