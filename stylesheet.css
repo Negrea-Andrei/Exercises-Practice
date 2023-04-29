@@ -1,14 +1,10 @@
-input {
-    border: 2px solid #000;
-    margin-bottom: 15px;
-    padding: 5px;
-    border-radius: 5px;
-  }
-  
-  input:invalid {
-    border-color: red;
-  }
-  
-  input:valid {
-    border-color: green;
-  }
+* {
+  border: solid black 1px
+}
+
+.container {
+  display: grid;
+  border: solid black 1px;
+  grid-template-columns: 5vh 5vh;
+  grid-template-rows: 5vw 5vw;
+}
