@@ -1,12 +1,19 @@
 * {
-  border: solid black 1px
+  border: solid black 1px;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  box-sizing: border-box;
 }
 
 .container {
   display: grid;
+  width: min-content;
   border: solid black 1px;
   grid-auto-flow: column;
   grid-template-columns: 5vh 5vh;
-  grid-template-rows: 5vw 5vw;
+  grid-template-rows: 2vw 2vw;
   grid-auto-columns: 5vh;
+  column-gap: 1vh;
+  row-gap: 1vw;
 }
