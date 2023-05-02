@@ -1,19 +1,28 @@
-.container {
+.grid-container {
+  resize: both;
+  overflow: auto;
   display: grid;
-  grid-template-rows: 100px 100px 100px;
-  grid-template-columns: 100px 100px 100px;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid grey;
+  background-color: skyblue;
+  grid-template-rows: 150px 150px;
+  grid-template-columns: 150px 150px 150px 150px 150px;
 }
 
-.item {
-  background-color: orange;
-  border: 1px solid black;
+.grid-item {
+  background-color: #444;
   text-align: center;
+  color: #ddd;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  padding: 12px;
 }
 
-.first-row {
-   background-color: pink; 
+p {
+  margin: 12px auto 24px;
 }
 
-.last-column {
-background-color: lightblue;
+img {
+  height: 60px;
 }
