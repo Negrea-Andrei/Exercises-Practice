@@ -13,6 +13,12 @@
   /*this will make the first and second column bigger than the rest */
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 2fr) repeat(3, 1fr) ;
+
+  /*reminder: i can use both fr and px in the same grid to declare the size of the columns and rows */
+  
+  /*dynamic sizes using min() max() 
+  grid-template-rows: repeat(2, min(200px, 50%));
+  grid-template-columns: repeat(5, max(120px, 15%));*/
 }
 
 .grid-item {
