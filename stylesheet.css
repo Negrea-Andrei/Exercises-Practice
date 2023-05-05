@@ -25,8 +25,12 @@
   grid-template-columns: repeat(5, minmax(150px, 200px));*/
 
   /*use clamp for a flexible design */
+  /*grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, clamp(1500px, 50%, 200px));*/
+  
+  /*use auto-fit and auto-fill for flexibility when it comes to columns and rows number */
   grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(5, clamp(1500px, 50%, 200px)); 
+  grid-template-columns: repeat(5, clamp(1500px, 50%, 200px));
 }
 
 .grid-item {
