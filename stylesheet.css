@@ -33,7 +33,14 @@
   grid-template-columns: repeat(auto-fill, 100px);
 
   /*use minmax() combine with auto-fit */
-  grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
+  /* auto-fit will make the columns retch there is max size if there is more room to fit more items*/
+  /*if there are 4 items and room to fit a 5 column, the items are going to have the max size*/
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+  /*use minmax() combine with auto-fill*/
+  /* auto-fill will make the columns retch there mix size if there is more room to fit more items*/
+  /*if there are 4 items and room to fit a 5 column, the items are going to have the min size*/
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 }
 
 .grid-item {
