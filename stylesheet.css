@@ -20,8 +20,13 @@
   grid-template-rows: repeat(2, min(200px, 50%));
   grid-template-columns: repeat(5, max(120px, 15%));*/
   /* use minmax()*/
+  /*sets the grid rows and columns to be flexible depending on how you resize it*/
+  /*grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, minmax(150px, 200px));*/
+
+  /*use clamp for a flexible design */
   grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(5, minmax(150px, 200px));
+  grid-template-columns: repeat(5, clamp(1500px, 50%, 200px)); 
 }
 
 .grid-item {
